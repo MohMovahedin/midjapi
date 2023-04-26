@@ -14,8 +14,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.post('/generate-image', async (req, res) => {
-  const { prompt } = req.body;
+app.get('/:input', async (req, res) => {
+  const { prompt } = req.params.input;
   const result = await generateImage(prompt);
   res.send(result);
 });
@@ -23,3 +23,4 @@ app.post('/generate-image', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
