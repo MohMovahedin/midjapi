@@ -1,0 +1,17 @@
+{
+  "name": "midjapi",
+  "version": "1.0.0",
+  "description": "My Node.js app",
+  "main": "app.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "midjourney-client": "^1.0.8"
+  }
+}
